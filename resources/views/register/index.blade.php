@@ -1,16 +1,14 @@
-@extends('layouts.main')
+@extends('layouts.app')
 @section('title','penyakit kucing')
 @section('content')
-<div class="fugu-hero-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12 col-lg-7">
+<div class="fugu-hero" style="background-image: url(/img/gambar.jpg)">
+    <div class="fugu--breadcrumbs-center">
 <div class="row justify-content-center">
-    <div class= "col-md-5">
+<div class="col-md-4">
+
         <main class="form-registration">
             <form action="/register" method="POST">
                 @csrf
-
 
               <h1 class="h3 mb-3 fw-normal text-center">Form Daftar Akun</h1>
 
@@ -66,8 +64,8 @@
 </div>
         </div>
       </div>
-    </div>
-</div>
+
+
 
 
 @endsection

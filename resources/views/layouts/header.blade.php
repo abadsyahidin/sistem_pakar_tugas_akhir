@@ -4,7 +4,7 @@
         <!-- Brand Logo-->
         <div class="brand-logo">
           <a href="index.html">
-            <img src="assets/images/logo/logo-black.svg" alt="" class="light-version-logo">
+            <img class="col-xl-59 col-lg-7"src="img/car.png" alt="" class="light-version-logo">
           </a>
         </div>
         <div class="menu-block-wrapper">

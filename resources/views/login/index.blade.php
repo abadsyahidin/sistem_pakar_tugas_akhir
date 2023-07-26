@@ -1,12 +1,11 @@
-@extends('layouts.main')
+@extends('layouts.app')
 @section('title','penyakit kucing')
 @section('content')
-<div class="fugu-hero-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12 col-lg-7">
 
-<div class="row justify-content-center">
+<div class="fugu-hero" style="background-image: url(/img/gambar.jpg)">
+        <div class="fugu--breadcrumbs-section">
+
+<div class="row justify-content-center ">
     <div class="col-md-4">
 
       @if (session()->has('berhasil'))
@@ -27,7 +26,7 @@
             <h1 class="h3 mb-3 fw-normal text-center">Please Login</h1>
             <form action="/masuk" method="post">
               @csrf
-              <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+
 
               <div class="form-floating" class="form-label">Email address</label>
                 <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email"
@@ -51,14 +50,21 @@
             </form>
             <small class="d-block text-center mt-3"> Belum Registrasi? <a href="/register">
                 Registrasi sekarang!!</a></small>
+
         </main>
     </div>
 </div>
-
+</div>
+            </div>
         </div>
-      </div>
     </div>
 </div>
+
+
+
+
+
+
 
 
 
